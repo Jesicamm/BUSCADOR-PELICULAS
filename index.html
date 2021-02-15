@@ -13,24 +13,25 @@
     <header>
         <div class="yourMovies">ALL * UR * MOVIES</div>
         
-            <input type="text" id="search" placeholder="Search" class="search"/>
+            <input type="text" id="search" placeholder="SearchByTittle" class="search"/>
             <button name="button" onclick="searchFilms()">SUBMIT</button>
-       
+            <input type="text" id="searchid" placeholder="SearchById" class="search"/>
+            <button name="button" onclick="searchId()">SUBMIT</button>
      
     </header>
 
     <main class="allCathegorys">
          <span  id="popular-Films">Películas Populares</span>
             <hr>
-         <span id="printed-popular"></span>
+         <span id="printed-popular"class="films-horizontal"></span>
 
          <span  id="toprated-Films">Películas Top</span>
             <hr>
-         <span id="printed-top_rated"></span>
+         <span id="printed-top_rated"class="films-horizontal"></span>
 
          <span  id="upcomingFilms">Próximos Estrenos</span>
             <hr>
-         <span id="printed-upcoming"></span>
+         <span id="printed-upcoming"class="films-horizontal"></span>
 
 
      
