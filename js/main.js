@@ -36,12 +36,12 @@ const searchFilms = () => {
     })   
 }
 
-//BUSCAR PELÍCULAS X GENERO
+//BUSCAR PELÍCULAS X id
 const searchId = () => {
-    let id = inputId.value
+    let id = inputId.value;
     fetch(`https://api.themoviedb.org/3/find/${id}?api_key=e34f732b92a2e7dbe69709d0433150c3&language=es&external_source=imdb_id`)
     .then(response => response.json())
     .then(data => {
-        console.log(data.results);
+        console.log(data.movie_results[0].original_title);
     })   
 }
