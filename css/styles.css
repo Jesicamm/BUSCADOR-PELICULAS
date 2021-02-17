@@ -77,7 +77,6 @@ hr {
 }
 
 .films-horizontal::-webkit-scrollbar-track {
-    /* -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); */
     border-radius: 10px;
     background-color: #F5F5F5;
 }
@@ -89,7 +88,6 @@ hr {
 
 .films-horizontal::-webkit-scrollbar-thumb {
     border-radius: 10px;
-    /* -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);  */
     background-color: #555;
 }
 
@@ -119,11 +117,7 @@ hr {
 }
 
 #search-Container {
-    /*  display: flex;
-    flex-direction: column; */
-    /* text-align: center; */
     background-color: black;
-    /* height: 27em; */
     width: 100%;
     height: 27em;
     padding: 1em;
@@ -139,4 +133,13 @@ hr {
     font-size: medium;
     justify-content: center;
     height: 4em;
+}
+
+.back {
+    color: black;
+    padding: 0.5em;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: large;
+    border: none;
+    margin: auto;
 }

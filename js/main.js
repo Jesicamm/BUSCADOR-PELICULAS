@@ -29,16 +29,21 @@ getFilms('upcoming')
 
 //BUSCAR PELÍCULAS X NOMBRE
 const searchFilms = () => {
-        let query = inputValue.value
-        fetch(`https://api.themoviedb.org/3/search/movie?api_key=e34f732b92a2e7dbe69709d0433150c3&language=es&query=${query}`)
-            .then(response => response.json())
-            .then(data => {
-                let movies = data.results;
-                renderSearch(movies)
-            })
-    }
-    //PINTAR PELICULAS BUSCADAS POR NOMBRE
+    document.querySelector('#screen2').innerHTML = ""
+    let query = inputValue.value
+    fetch(`https://api.themoviedb.org/3/search/movie?api_key=e34f732b92a2e7dbe69709d0433150c3&language=es&query=${query}`)
+        .then(response => response.json())
+        .then(data => {
+            let movies = data.results;
+            renderSearch(movies)
+        })
+}
+
+//PINTAR PELICULAS BUSCADAS POR NOMBRE
 const renderSearch = (movies) => {
+        document.querySelector('#screen2').innerHTML = ""
+        document.querySelector('#screen2').innerHTML +=
+            `<button onclick="window.location.reload();" class="back" id="back" style="display: flex">BACK</button>`
         movies.forEach(
             movie => document.querySelector('#screen2').innerHTML +=
             `<div id="search-Container">
@@ -47,6 +52,8 @@ const renderSearch = (movies) => {
          </div>`
         )
         cambiaPantalla("screen1", "screen2");
+
+
     }
     //BUSCAR PELÍCULAS POR ID
 const searchId = () => {
@@ -67,6 +74,7 @@ const renderId = (movies) => {
          </div>`
         cambiaPantalla("screen1", "screen2");
 
+
     }
     // FUNCION CAMBIAR DE PANTALLA
 
@@ -80,6 +88,7 @@ let cambiaPantalla = (faseAhora, faseFutura) => {
     pantallaActual.style.display = "none";
     pantallaDestino.style.display = "block";
 };
+
 
 //BUSCAR PELÍCULAS X id externo
 /* const searchId = () => {
