@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,37 +10,39 @@
     <link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz&display=swap" rel="stylesheet">
 
 </head>
+
 <body>
     <header>
         <div class="yourMovies">ALL * UR * MOVIES</div>
-        
-            <input type="text" id="search" placeholder="SearchByTittle" class="search"/>
-            <button name="button" onclick="searchFilms()">SUBMIT</button>
-            <input type="text" id="searchid" placeholder="SearchById" class="search"/>
-            <button name="button" onclick="searchId()">SUBMIT</button>
-     
+
+        <input type="text" id="searchfilm" placeholder="SearchByTittle" class="search" />
+        <button name="button" class="submit" id="submitfilm" onclick="searchFilms()">SUBMIT</button>
+        <input type="text" id="searchid" placeholder="SearchById" class="search" />
+        <button name="button" class="submit" id="submitid" onclick="searchId()">SUBMIT</button>
+
     </header>
     <hr>
     <div class="screen1" id="screen1" style="display: flex;">
         <main class="allCathegorys">
-            <span  id="popular-Films">Películas Populares</span>
-                <hr>
-            <span id="printed-popular"class="films-horizontal"></span>
+            <span id="popular-Films">Películas Populares</span>
+            <hr>
+            <span id="printed-popular" class="films-horizontal"></span>
 
-            <span  id="toprated-Films">Películas Top</span>
-                <hr>
-            <span id="printed-top_rated"class="films-horizontal"></span>
+            <span id="toprated-Films">Películas Top</span>
+            <hr>
+            <span id="printed-top_rated" class="films-horizontal"></span>
 
-            <span  id="upcomingFilms">Próximos Estrenos</span>
-                <hr>
-            <span id="printed-upcoming"class="films-horizontal"></span>     
+            <span id="upcomingFilms">Próximos Estrenos</span>
+            <hr>
+            <span id="printed-upcoming" class="films-horizontal"></span>
         </main>
     </div>
 
     <div class="screen2" id="screen2" style="display: none;">
-    
-    
+
+
     </div>
     <script src="js/main.js"></script>
 </body>
+
 </html>

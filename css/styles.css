@@ -4,67 +4,65 @@
     color: white;
 }
 
-header{
+header {
     display: flex;
     background-color: black;
 }
 
-.yourMovies{
+.yourMovies {
     padding: 0.8em;
-    background-color: #FFEE58 ;
+    background-color: #FFEE58;
     color: rgb(29, 31, 48);
     font-family: 'Yanone Kaffeesatz', sans-serif;
     font-size: larger;
-    border-width:1px;
+    border-width: 1px;
     border-style: solid;
-    border-color:black;       
+    border-color: black;
 }
 
-hr{
+hr {
     background-color: white;
     height: 0.3em;
 }
 
-
-.allCathegorys{
+.allCathegorys {
     display: grid;
-    flex-direction: column;     
+    flex-direction: column;
 }
 
-
-#film-Container{
-    width: 100%; 
+#film-Container {
+    width: 100%;
     height: 27em;
     padding: 1em;
-    text-align: center;  
-    background-color: black;  
+    text-align: center;
+    background-color: black;
 }
 
-#tittle-film{
-    padding: 0.8em; 
-    font-size:medium;
+#tittle-film {
+    padding: 0.8em;
+    font-size: medium;
     justify-content: center;
-    height: 4em;     
+    height: 4em;
 }
 
-#popular-Films{
-  font-family: 'Yanone Kaffeesatz', sans-serif; 
-  font-size: x-large;
-  padding: 1em;
-  background-color:#009688;
-  color: black;
-}
-
-#toprated-Films{
-    font-family: 'Yanone Kaffeesatz', sans-serif; 
+#popular-Films {
+    font-family: 'Yanone Kaffeesatz', sans-serif;
     font-size: x-large;
     padding: 1em;
     background-color: #009688;
     color: black;
 }
 
-#upcomingFilms{
-    font-family: 'Yanone Kaffeesatz', sans-serif; 
+#toprated-Films {
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: x-large;
+    padding: 1em;
+    background-color: #009688;
+    color: black;
+}
+
+#upcomingFilms {
+    font-family: 'Yanone Kaffeesatz', sans-serif;
     font-size: x-large;
     padding: 1em;
     background-color: #009688;
@@ -73,31 +71,72 @@ hr{
 
 .films-horizontal {
     overflow-x: scroll;
-    width:100%;
+    width: 100%;
     display: flex;
-    flex-direction: row;   
+    flex-direction: row;
 }
 
-.films-horizontal::-webkit-scrollbar-track{
+.films-horizontal::-webkit-scrollbar-track {
     /* -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); */
     border-radius: 10px;
     background-color: #F5F5F5;
 }
 
-.films-horizontal::-webkit-scrollbar{
+.films-horizontal::-webkit-scrollbar {
     height: 0.7em;
     background-color: #F5F5F5;
 }
 
-.films-horizontal::-webkit-scrollbar-thumb{
+.films-horizontal::-webkit-scrollbar-thumb {
     border-radius: 10px;
     /* -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);  */
     background-color: #555;
 }
 
-.screen2{
-    display: grid;
-    flex-direction: column;
+.screen2 {
+    display: flex;
+    flex-direction: row;
     width: 100%;
     height: 100%;
+}
+
+.search {
+    border: 1px solid rgb(247, 243, 243);
+    border-radius: 0%;
+    height: 2em;
+    align-self: center;
+    margin-left: 2em;
+    color: black;
+}
+
+.submit {
+    height: 2em;
+    width: 5em;
+    align-self: center;
+    margin-left: 0.3em;
+    color: black;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+
+#search-Container {
+    /*  display: flex;
+    flex-direction: column; */
+    /* text-align: center; */
+    background-color: black;
+    /* height: 27em; */
+    width: 100%;
+    height: 27em;
+    padding: 1em;
+    text-align: center
+}
+
+#searchPhoto-film {
+    width: 12em;
+}
+
+#searchTittle-film {
+    padding: 0.8em;
+    font-size: medium;
+    justify-content: center;
+    height: 4em;
 }
